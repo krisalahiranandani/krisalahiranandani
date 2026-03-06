@@ -1,8 +1,0 @@
-{
-    "name": "krisala-hiranandani-township",
-    "version": "1.0.1",
-    "description": "Production build scripts for KxH Township",
-    "scripts": {
-        "start": "npx serve ."
-    }
-}
