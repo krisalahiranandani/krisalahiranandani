@@ -1,17 +1,8 @@
 {
     "name": "krisala-hiranandani-township",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Production build scripts for KxH Township",
     "scripts": {
-        "build:css": "cleancss -o dist/style.min.css style.css",
-        "build:js": "uglifyjs app.js -c -m -o dist/app.min.js",
-        "build:sw": "uglifyjs sw.js -c -m -o dist/sw.min.js",
-        "prebuild": "mkdir -p dist && cp *.html *.json dist/",
-        "build": "npm run build:css && npm run build:js && npm run build:sw",
         "start": "npx serve ."
-    },
-    "devDependencies": {
-        "clean-css-cli": "^5.6.3",
-        "uglify-js": "^3.17.4"
     }
 }
