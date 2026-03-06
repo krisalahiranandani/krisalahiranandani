@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | Krisala Hiranandani Township</title>
+    <meta name="robots" content="noindex, nofollow">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <script defer src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    
+    <!-- Phase 21: Extreme Performance Preloads (Lighthouse 100/100) -->
+    <link rel="preload" href="style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" as="style">
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: var(--bg-dark);
+        }
+
+        .error-content {
+            max-width: 600px;
+            padding: 40px;
+        }
+
+        .error-code {
+            font-family: var(--font-heading);
+            font-size: 10rem;
+            line-height: 1;
+            background: linear-gradient(135deg, var(--gold-primary), var(--gold-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .error-content h1 {
+            font-family: var(--font-heading);
+            font-size: 2rem;
+            margin-bottom: 15px;
+        }
+
+        .error-content p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        .error-links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .error-links a {
+            padding: 14px 30px;
+            border: 1px solid rgba(197, 160, 89, 0.3);
+            border-radius: 8px;
+            color: var(--gold-primary);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .error-links a:hover {
+            background: rgba(197, 160, 89, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .error-links a.primary-link {
+            background: var(--gold-primary);
+            color: var(--bg-dark);
+            border-color: var(--gold-primary);
+        }
+
+        .error-links a.primary-link:hover {
+            background: var(--gold-light);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="error-page">
+        <div class="error-content">
+            <div class="error-code">404</div>
+            <h1>This wing is still under <span>construction</span></h1>
+            <p>The page you're looking for doesn't exist yet. But our 105-acre township certainly does.</p>
+            <div class="error-links">
+                <a href="index.html" class="primary-link">Return to Township</a>
+                <a href="everlyn.html">Explore Everlyn</a>
+                <a href="della.html">Discover Della</a>
+                <a href="compare.html">Compare Projects</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <url>
+    <loc>https://krisalahiranandani-pune.com/</loc>
+    <image:image>
+      <image:loc>https://krisalahiranandani-pune.com/public/everlyn/hero/hero_exterior.jpeg</image:loc>
+      <image:title>Krisala Hiranandani Township Hinjewadi</image:title>
+      <image:caption>The majestic exterior facade of India's 1st Equestrian Township in Hinjewadi.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://krisalahiranandani-pune.com/public/everlyn/masterplan/Themepark.png</image:loc>
+      <image:title>105-Acre Masterplan</image:title>
+      <image:caption>An aerial view of the 105+ acre township featuring the 8-acre private racecourse.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://krisalahiranandani-pune.com/everlyn.html</loc>
+    <image:image>
+      <image:loc>https://krisalahiranandani-pune.com/public/everlyn/gallery/gallery_pool_2.jpeg</image:loc>
+      <image:title>Everlyn Luxury Pool</image:title>
+      <image:caption>The infinity pool and luxury clubhouse at Everlyn Tower.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://krisalahiranandani-pune.com/public/everlyn/floorplans/2bhk.png</image:loc>
+      <image:title>Everlyn 2 BHK Floor Plan</image:title>
+      <image:caption>Spacious 2 BHK luxury floor plan at Krisala Hiranandani.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://krisalahiranandani-pune.com/public/everlyn/floorplans/3bhk.png</image:loc>
+      <image:title>Everlyn 3 BHK Floor Plan</image:title>
+      <image:caption>Expansive 3 BHK luxury floor plan at Krisala Hiranandani.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://krisalahiranandani-pune.com/della.html</loc>
+    <image:image>
+      <image:loc>https://krisalahiranandani-pune.com/public/della/hero.jpeg</image:loc>
+      <image:title>The Della Collection</image:title>
+      <image:caption>Ultra-luxury villa plots by Della Resorts in Hinjewadi.</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://krisalahiranandani-pune.com/masterplan.html</loc>
+    <image:image>
+      <image:loc>https://krisalahiranandani-pune.com/public/everlyn/masterplan/master_plan.png</image:loc>
+      <image:title>Krisala Hiranandani Masterplan</image:title>
+      <image:caption>Detailed interactive masterplan of the Hinjewadi township.</image:caption>
+    </image:image>
+  </url>
+</urlset>
