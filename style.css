@@ -1609,7 +1609,7 @@ ul {
 .brand-vision-parallax {
     position: relative;
     padding: 150px 0;
-    background: url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2000&auto=format&fit=crop') fixed center center/cover;
+    background: url('public/hero_placeholders/hero_exterior_tower.png') fixed center center/cover;
     text-align: center;
 }
 
@@ -2145,6 +2145,7 @@ ul {
         grid-template-columns: 1fr;
     }
 }
+
 /* Quiz Overlay Styles */
 .quiz-overlay {
     position: fixed;
@@ -2160,7 +2161,9 @@ ul {
     backdrop-filter: blur(20px);
 }
 
-.quiz-overlay.active { display: flex; }
+.quiz-overlay.active {
+    display: flex;
+}
 
 .quiz-container {
     width: 90%;
@@ -2186,7 +2189,9 @@ ul {
     animation: fadeIn 0.5s ease;
 }
 
-.quiz-step.active { display: block; }
+.quiz-step.active {
+    display: block;
+}
 
 .quiz-step h2 {
     font-size: 2.2rem;
@@ -2194,7 +2199,9 @@ ul {
     font-family: var(--font-heading);
 }
 
-.quiz-step h2 span { color: var(--gold-primary); }
+.quiz-step h2 span {
+    color: var(--gold-primary);
+}
 
 .step-num {
     display: block;
@@ -2230,11 +2237,20 @@ ul {
     transform: translateY(-5px);
 }
 
-.quiz-opt .gold-icon { font-size: 2rem; }
+.quiz-opt .gold-icon {
+    font-size: 2rem;
+}
 
-.quiz-opt strong { font-size: 1.1rem; color: var(--gold-light); }
+.quiz-opt strong {
+    font-size: 1.1rem;
+    color: var(--gold-light);
+}
 
-.quiz-opt span { font-size: 0.9rem; color: var(--text-muted); line-height: 1.4; }
+.quiz-opt span {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.4;
+}
 
 .quiz-progress {
     margin-top: 50px;
@@ -2251,7 +2267,10 @@ ul {
     transition: width 0.5s ease;
 }
 
-.result-header h2 { font-size: 3rem; margin: 20px 0; }
+.result-header h2 {
+    font-size: 3rem;
+    margin: 20px 0;
+}
 
 .result-actions {
     display: flex;
@@ -2260,8 +2279,13 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .quiz-options { grid-template-columns: 1fr; }
-    .quiz-container { padding: 40px 20px; }
+    .quiz-options {
+        grid-template-columns: 1fr;
+    }
+
+    .quiz-container {
+        padding: 40px 20px;
+    }
 }
 
 /* Transit Matrix Styles */
@@ -2278,7 +2302,9 @@ ul {
     margin-bottom: 30px;
 }
 
-.matrix-header h3 { font-size: 1.5rem; }
+.matrix-header h3 {
+    font-size: 1.5rem;
+}
 
 .matrix-grid {
     display: grid;
@@ -2296,8 +2322,16 @@ ul {
     border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.commute-info strong { display: block; color: var(--gold-light); font-size: 0.95rem; }
-.commute-info span { font-size: 0.75rem; color: var(--text-muted); }
+.commute-info strong {
+    display: block;
+    color: var(--gold-light);
+    font-size: 0.95rem;
+}
+
+.commute-info span {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
 
 .commute-time {
     font-size: 1.2rem;
@@ -2315,8 +2349,15 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .matrix-grid { grid-template-columns: 1fr; }
-    .matrix-header { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .matrix-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .matrix-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
 }
 
 /* UTM Hidden Fields */
@@ -2340,7 +2381,7 @@ ul {
     gap: 15px;
     transform: translateX(120%);
     transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .inventory-hud.active {
@@ -2380,13 +2421,16 @@ ul {
     height: 100%;
     background: rgba(8, 8, 10, 0.98);
     z-index: 3000;
-    display: none; /* Controlled by JS */
+    display: none;
+    /* Controlled by JS */
     align-items: center;
     justify-content: center;
     backdrop-filter: blur(30px);
 }
 
-.exit-overlay.active { display: flex; }
+.exit-overlay.active {
+    display: flex;
+}
 
 .exit-container {
     width: 90%;
@@ -2410,7 +2454,9 @@ ul {
     transition: color 0.3s;
 }
 
-.close-exit:hover { color: var(--gold-primary); }
+.close-exit:hover {
+    color: var(--gold-primary);
+}
 
 .exit-content h2 {
     font-size: 2.8rem;
@@ -2451,10 +2497,12 @@ ul {
     display: flex;
     align-items: center;
     gap: 12px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
 
-.activity-ticker.active { transform: translateY(0); }
+.activity-ticker.active {
+    transform: translateY(0);
+}
 
 .ticker-content {
     display: flex;
@@ -2505,9 +2553,19 @@ ul {
 }
 
 @media (max-width: 768px) {
-    .exit-container { padding: 40px 20px; }
-    .exit-content h2 { font-size: 2rem; }
-    .activity-ticker { bottom: 20px; left: 20px; right: 20px; }
+    .exit-container {
+        padding: 40px 20px;
+    }
+
+    .exit-content h2 {
+        font-size: 2rem;
+    }
+
+    .activity-ticker {
+        bottom: 20px;
+        left: 20px;
+        right: 20px;
+    }
 }
 
 /* Phase 13: Cinematic Preloader */
@@ -2570,12 +2628,19 @@ ul {
 }
 
 @keyframes preloaderFill {
-    to { width: 100%; }
+    to {
+        width: 100%;
+    }
 }
 
 @keyframes preloaderPulse {
-    from { transform: scale(1); }
-    to { transform: scale(1.02); }
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.02);
+    }
 }
 
 /* Scroll Progress Indicator */
@@ -2683,7 +2748,9 @@ img.loaded {
     user-select: none;
 }
 
-.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
 
 .faq-item summary::after {
     content: '+';
@@ -2704,7 +2771,9 @@ img.loaded {
 }
 
 @media (max-width: 768px) {
-    .faq-grid { grid-template-columns: 1fr; }
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 /* Phase 17: PWA Install Banner */
@@ -2738,7 +2807,9 @@ img.loaded {
     gap: 15px;
 }
 
-.install-content .gold-icon { font-size: 1.5rem; }
+.install-content .gold-icon {
+    font-size: 1.5rem;
+}
 
 .install-content strong {
     display: block;
@@ -2793,6 +2864,13 @@ img.loaded {
         flex-direction: column;
         align-items: stretch;
     }
-    .install-actions { justify-content: flex-end; }
-    .floating-share { bottom: 80px; right: 15px; }
+
+    .install-actions {
+        justify-content: flex-end;
+    }
+
+    .floating-share {
+        bottom: 80px;
+        right: 15px;
+    }
 }

@@ -8,12 +8,12 @@
     "theme_color": "#c5a059",
     "icons": [
         {
-            "src": "https://images.unsplash.com/photo-1534145781358-1f3eb12cb691?q=80&w=192&auto=format&fit=crop",
+            "src": "public/hero_placeholders/hero_aerial_township.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "https://images.unsplash.com/photo-1534145781358-1f3eb12cb691?q=80&w=512&auto=format&fit=crop",
+            "src": "public/hero_placeholders/hero_aerial_township.png",
             "sizes": "512x512",
             "type": "image/png"
         }
