@@ -8,14 +8,14 @@
     "theme_color": "#c5a059",
     "icons": [
         {
-            "src": "public/hero_placeholders/hero_aerial_township.png",
+            "src": "public/everlyn/hero/hero_alt_2.jpeg",
             "sizes": "192x192",
-            "type": "image/png"
+            "type": "image/jpeg"
         },
         {
-            "src": "public/hero_placeholders/hero_aerial_township.png",
+            "src": "public/everlyn/hero/hero_alt_2.jpeg",
             "sizes": "512x512",
-            "type": "image/png"
+            "type": "image/jpeg"
         }
     ]
 }
