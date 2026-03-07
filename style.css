@@ -2936,7 +2936,6 @@ img.loaded {
     display: block !important;
     margin: 0 !important;
     padding: 0 !important;
-    filter: brightness(0) invert(1);
 }
 
 /* Mobile Nav Styles & Overlaps Fixes */
