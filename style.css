@@ -1609,7 +1609,7 @@ ul {
 .brand-vision-parallax {
     position: relative;
     padding: 150px 0;
-    background: url('public/hero_placeholders/hero_exterior_tower.png') fixed center center/cover;
+    background: url('public/everlyn/hero/hero_main_hq.jpeg') fixed center center/cover;
     text-align: center;
 }
 
