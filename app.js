@@ -400,9 +400,9 @@ document.addEventListener('DOMContentLoaded', () => {
             }, 300);
         });
     });
-    // 15. Lead Form Submission (Restored Logic)
+    // 15. Lead Form Submission (FormSubmit Integration)
     if (leadForm) {
-        leadForm.addEventListener('submit', (e) => {
+        leadForm.addEventListener('submit', async (e) => {
             e.preventDefault();
             const submitBtn = leadForm.querySelector('button[type="submit"]');
             const originalText = submitBtn.textContent;
@@ -410,21 +410,46 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.textContent = 'Registering Priority Access...';
             submitBtn.disabled = true;
 
-            setTimeout(() => {
-                submitBtn.textContent = 'Enquiry Received!';
-                submitBtn.style.background = '#28a745';
-                submitBtn.style.color = 'white';
+            const formData = new FormData(leadForm);
 
+            try {
+                const response = await fetch(leadForm.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    submitBtn.textContent = 'Enquiry Received!';
+                    submitBtn.style.background = '#28a745';
+                    submitBtn.style.color = 'white';
+
+                    setTimeout(() => {
+                        const enquiryModal = document.getElementById('enquiryModal');
+                        if (enquiryModal) enquiryModal.classList.remove('active');
+                        leadForm.reset();
+                        submitBtn.textContent = originalText;
+                        submitBtn.style.background = '';
+                        submitBtn.style.color = '';
+                        submitBtn.disabled = false;
+                    }, 2000);
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                console.error(error);
+                submitBtn.textContent = 'Error. Please try again.';
+                submitBtn.style.background = '#dc3545';
+                submitBtn.style.color = 'white';
                 setTimeout(() => {
-                    const enquiryModal = document.getElementById('enquiryModal');
-                    if (enquiryModal) enquiryModal.classList.remove('active');
-                    leadForm.reset();
                     submitBtn.textContent = originalText;
                     submitBtn.style.background = '';
                     submitBtn.style.color = '';
                     submitBtn.disabled = false;
-                }, 2000);
-            }, 1800);
+                }, 3000);
+            }
         });
     }
 
@@ -802,4 +827,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     captureUTM();
     initInventoryHUD();
+
+    // 32. Mobile Hamburger Menu Toggle
+    const hamburgerBtn = document.getElementById('hamburgerMenu');
+    const navLinks = document.querySelector('.nav-links');
+
+    if (hamburgerBtn && navLinks) {
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerBtn.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+    }
 });

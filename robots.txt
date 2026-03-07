@@ -1,4 +1,15 @@
 User-agent: *
 Allow: /
+Allow: /public/
+Allow: /style.css
+Allow: /app.js
+Allow: /manifest.json
 
-Sitemap: https://krisalahiranandani-pune.com/sitemap.xml
+# Image & Asset Crawling
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.webp$
+
+# Sitemaps
+Sitemap: https://krisalahiranandanitownships.com/sitemap.xml

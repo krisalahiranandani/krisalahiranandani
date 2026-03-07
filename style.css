@@ -192,18 +192,27 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-height: 50px;
+    /* Gives the container a consistent height to prevent the logo from collapsing it or overflowing strangely */
 }
 
-.logo-text {
-    font-size: 2.2rem;
-    letter-spacing: 3px;
-    font-family: var(--font-heading);
-    font-weight: 400;
+.logo {
+    display: flex;
+    align-items: center;
+    height: 50px !important;
+    width: auto;
+}
+
+.header-logo {
+    height: 50px !important;
+    width: auto;
 }
 
 .nav-links {
     display: flex;
     gap: 32px;
+    align-items: center;
+    /* aligns links with the logo centrally */
 }
 
 .nav-link {
@@ -487,6 +496,8 @@ ul {
 .legacy {
     padding: var(--section-gap) 0;
     position: relative;
+    background: radial-gradient(circle at top right, rgba(197, 160, 89, 0.05), transparent 50%),
+        radial-gradient(circle at bottom left, rgba(197, 160, 89, 0.03), transparent 50%);
 }
 
 .legacy::before {
@@ -543,6 +554,11 @@ ul {
 .masterplan {
     padding: var(--section-gap) 0;
     background-color: #0d0d10;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    background-image: linear-gradient(rgba(212, 175, 55, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(212, 175, 55, 0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
 }
 
 .masterplan-grid {
@@ -635,6 +651,9 @@ ul {
 .phases {
     padding: var(--section-gap) 0;
     overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    background: radial-gradient(circle at 100% 50%, rgba(197, 160, 89, 0.06), transparent 60%);
 }
 
 .phases .section-header {
@@ -756,6 +775,9 @@ ul {
 .amenities-grand {
     padding: var(--section-gap) 0;
     background-color: #0d0d10;
+    border-top: 1px solid rgba(212, 175, 55, 0.2);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+    background-image: radial-gradient(circle at top left, rgba(197, 160, 89, 0.05), transparent 40%);
 }
 
 .amenities-grand .section-header {
@@ -2016,7 +2038,9 @@ ul {
 
 .utility-tools {
     padding: 100px 0;
-    background: rgba(255, 255, 255, 0.02);
+    background: radial-gradient(circle at top left, rgba(197, 160, 89, 0.05), transparent 60%);
+    border-top: 1px solid rgba(212, 175, 55, 0.15);
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15);
 }
 
 .calculators-grid {
@@ -2027,10 +2051,11 @@ ul {
 
 .calc-card {
     padding: 50px;
-    border: 1px solid rgba(197, 160, 89, 0.1);
-    background: rgba(8, 8, 10, 0.4);
+    border: 1px solid rgba(197, 160, 89, 0.4);
+    background: rgba(8, 8, 10, 0.6);
     backdrop-filter: blur(20px);
     border-radius: var(--border-radius);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5), inset 0 0 20px rgba(197, 160, 89, 0.05);
 }
 
 .calc-card h3 {
@@ -2099,6 +2124,7 @@ ul {
 
 .testimonials {
     padding: 100px 0;
+    background: radial-gradient(circle at bottom right, rgba(197, 160, 89, 0.06), transparent 70%);
 }
 
 .testimonials-grid {
@@ -2109,9 +2135,10 @@ ul {
 
 .test-card {
     padding: 40px;
-    border: 1px solid rgba(197, 160, 89, 0.1);
+    border: 1px solid rgba(197, 160, 89, 0.3);
     border-radius: var(--border-radius);
-    background: rgba(255, 255, 255, 0.01);
+    background: rgba(255, 255, 255, 0.02);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
 }
 
 .test-rating {
@@ -2219,7 +2246,7 @@ ul {
 
 .quiz-opt {
     background: rgba(255, 255, 255, 0.03);
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(197, 160, 89, 0.2);
     padding: 30px;
     border-radius: 12px;
     text-align: left;
@@ -2872,5 +2899,146 @@ img.loaded {
     .floating-share {
         bottom: 80px;
         right: 15px;
+    }
+}
+
+/* Header Logo */
+.header-logo {
+    height: 50px !important;
+    max-width: 250px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    filter: brightness(0) invert(1);
+}
+
+/* Mobile Nav Styles & Overlaps Fixes */
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+    z-index: 2000;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: var(--gold-primary);
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (max-width: 992px) {
+    .hamburger-menu {
+        display: flex;
+    }
+
+    .logo {
+        height: 35px !important;
+        margin-right: auto;
+    }
+
+    .header-logo {
+        height: 35px !important;
+        max-width: 180px !important;
+    }
+
+    #registerBtn {
+        display: none;
+        /* Hide on small screens to prevent overlap */
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(10, 10, 12, 0.98);
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: clip-path 0.4s ease-in-out;
+        gap: 20px;
+    }
+
+    .nav-links.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+    }
+
+    .hero-grand {
+        min-height: 100vh;
+    }
+
+    .install-banner {
+        z-index: 900;
+    }
+
+    .exit-overlay,
+    .floating-share {
+        z-index: 900;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+    }
+
+    .inventory-hud {
+        display: none !important;
+        /* Hide floating banner on mobile */
+    }
+
+    .activity-ticker {
+        display: none !important;
+        /* Hide activity ticker on mobile to reduce clutter */
+    }
+
+    .stat-item h3 {
+        font-size: 2rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hero-actions .btn-primary,
+    .hero-actions .btn-secondary {
+        width: 100%;
     }
 }

@@ -1,45 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
   <url>
-    <loc>https://krisalahiranandani-pune.com/</loc>
-    <lastmod>2026-03-07</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://krisalahiranandanitownships.com/</loc>
+    <lastmod>2026-03-07T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
+    
+    <!-- Hero Image Indexing -->
+    <image:image>
+      <image:loc>https://krisalahiranandanitownships.com/public/everlyn/hero/hero_main_hq.jpeg</image:loc>
+      <image:title>Krisala Hiranandani Township Hinjewadi Aerial View</image:title>
+      <image:caption>105-Acre Krisala Hiranandani Township in Pune featuring Premium 2, 3, and 4 BHK Apartments</image:caption>
+    </image:image>
   </url>
-  <url>
-    <loc>https://krisalahiranandani-pune.com/everlyn.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://krisalahiranandani-pune.com/della.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://krisalahiranandani-pune.com/knowledge-hub.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://krisalahiranandani-pune.com/compare.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://krisalahiranandani-pune.com/neighborhood.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://krisalahiranandani-pune.com/masterplan.html</loc>
-    <lastmod>2026-03-07</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
+
 </urlset>
